@@ -1,5 +1,5 @@
 import {Document, Schema, Model, model} from "mongoose";
-import {IAsset} from "../interface/asset";
+import {IAsset} from "../interfaces/asset";
 
 export interface IAssetModel extends IAsset, Document {
 

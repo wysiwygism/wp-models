@@ -1,5 +1,5 @@
 import {Document, Schema, Model, model} from "mongoose";
-import {IWebsite} from "../interface/website";
+import {IWebsite} from "../interfaces/website";
 
 export interface IWebsiteModel extends IWebsite, Document {
 
