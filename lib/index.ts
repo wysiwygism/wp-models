@@ -22,3 +22,5 @@ export {IAssetIncludeBundles} from "./interfaces/asset-include-bundles";
 export {IAssetIncludePathBundles} from "./interfaces/asset-include-path-bundles";
 
 export {IUser} from "./interfaces/user";
+
+export {ITranzilla} from "./interfaces/tranzilla";
