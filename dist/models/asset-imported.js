@@ -127,14 +127,5 @@ let schema = new mongoose_1.Schema({
         type: Date,
         required: false
     }
-}).pre('save', function (next) {
-    let now = new Date();
-    if (!this.createdAt) {
-        this.createdAt = now;
-    }
-    next();
-}).pre('update', function (next) {
-    this.modifiedAt = new Date();
-    next();
 });
 exports.AssetImported = mongoose_1.model("AssetImported", schema);

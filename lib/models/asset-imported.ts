@@ -1,5 +1,5 @@
 import {Document, Schema, Model, model} from "mongoose";
-import {IAsset} from "wi-models";
+import {IAsset} from "../interfaces/asset";
 
 export interface IAssetImportedModel extends IAsset, Document {
 
@@ -135,15 +135,6 @@ let schema = new Schema({
         type: Date,
         required: false
     }
-}).pre('save', function (next) {
-    let now = new Date();
-    if (!this.createdAt) {
-        this.createdAt = now;
-    }
-    next();
-}).pre('update', function (next) {
-    this.modifiedAt = new Date();
-    next();
 });
 
 export const AssetImported: Model<IAssetImportedModel> = model<IAssetImportedModel>("AssetImported", schema);
