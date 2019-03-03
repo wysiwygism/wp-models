@@ -9,7 +9,11 @@ export const ConnectMongoDb = (hosts: string[], dbName: string, replicaSetName: 
         }
     } else {
         const hostsStr: string = hosts.join(',');
-        mongoose.connect('mongodb://' + hostsStr + '/' + dbName + '?replicaSet=' + replicaSetName + '&readPreference=secondaryPreferred', {useNewUrlParser: true}, (err: Error) => {
+        let url: string = 'mongodb://' + hostsStr + '/' + dbName;
+        if (replicaSetName) {
+            url = 'mongodb://' + hostsStr + '/' + dbName + '?replicaSet=' + replicaSetName + '&readPreference=secondaryPreferred';
+        }
+        mongoose.connect(url, {useNewUrlParser: true}, (err: Error) => {
             if (err) {
                 if (callback) {
                     return callback(err);
