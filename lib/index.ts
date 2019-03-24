@@ -32,3 +32,9 @@ export {IAssetIncludePathBundles} from "./interfaces/asset-include-path-bundles"
 export {IUser} from "./interfaces/user";
 
 export {ITranzilla} from "./interfaces/tranzilla";
+
+export {IPlan} from "./interfaces/plan";
+export {IPaymentRequest} from "./interfaces/payment-request";
+export {IPaymentRequestHistory} from "./interfaces/payment-request-history";
+export {IPaymentRequestItem} from "./interfaces/payment-request-item";
+export {IPaymentRequestCharge} from "./interfaces/payment-request-charge";
