@@ -164,4 +164,4 @@ let schema = new Schema({
     }
 });
 
-export const Website: Model<IWebsiteOptimizationModel> = model<IWebsiteOptimizationModel>("WebsiteOptimization", schema);
+export const WebsiteOptimization: Model<IWebsiteOptimizationModel> = model<IWebsiteOptimizationModel>("WebsiteOptimization", schema);
