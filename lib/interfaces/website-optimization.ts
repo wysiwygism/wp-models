@@ -48,5 +48,5 @@ export interface IWebsiteOptimization {
     startDate?: Date;
     endDate?: Date;
     duration?: number;
-    status: number;
+    status: string;
 }
