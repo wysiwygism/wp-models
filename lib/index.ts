@@ -14,6 +14,14 @@ export {IWebsiteTestResult} from "./interfaces/website-test-result";
 export {IWebsiteTestResults} from "./interfaces/website-test-results";
 export {IWebsiteActiveTask} from "./interfaces/website-active-task";
 export {IWebsiteScripts} from "./interfaces/website-scripts";
+export {
+    IStatusHistory,
+    IWebsiteOptimizationTestStatus,
+    IWebsiteOptimizationImportStatus,
+    IWebsiteAssetOptimizationStatus,
+    IWebsiteCdnInvalidationStatus,
+    IWebsiteOptimization
+} from "./interfaces/website-optimization";
 
 export {IAsset} from "./interfaces/asset";
 export {IAssetInclude} from "./interfaces/asset-include";
