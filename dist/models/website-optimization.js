@@ -1,12 +1,7 @@
-import {Document, Schema, Model, model} from "mongoose";
-import {IWebsiteOptimization} from "../interfaces/website-optimization";
-
-
-export interface IWebsiteOptimizationModel extends IWebsiteOptimization, Document {
-
-}
-
-let websiteOptimizationTestStatusSchema = new Schema({
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const mongoose_1 = require("mongoose");
+let websiteOptimizationTestStatusSchema = new mongoose_1.Schema({
     testId: {
         type: String,
         required: true
@@ -35,9 +30,8 @@ let websiteOptimizationTestStatusSchema = new Schema({
         type: Boolean,
         required: true
     }
-}, {_id: false});
-
-let websiteOptimizationImportStatusSchema = new Schema({
+}, { _id: false });
+let websiteOptimizationImportStatusSchema = new mongoose_1.Schema({
     importId: {
         type: String,
         required: true
@@ -66,9 +60,8 @@ let websiteOptimizationImportStatusSchema = new Schema({
         type: Boolean,
         required: true
     }
-}, {_id: false});
-
-let websiteAssetOptimizationStatusSchema = new Schema({
+}, { _id: false });
+let websiteAssetOptimizationStatusSchema = new mongoose_1.Schema({
     startDate: {
         type: Date,
         required: false
@@ -93,9 +86,8 @@ let websiteAssetOptimizationStatusSchema = new Schema({
         type: Boolean,
         required: true
     }
-}, {_id: false});
-
-let websiteCdnInvalidationStatusSchema = new Schema({
+}, { _id: false });
+let websiteCdnInvalidationStatusSchema = new mongoose_1.Schema({
     startDate: {
         type: Date,
         required: false
@@ -120,9 +112,8 @@ let websiteCdnInvalidationStatusSchema = new Schema({
         type: Boolean,
         required: true
     }
-}, {_id: false});
-
-let schema = new Schema({
+}, { _id: false });
+let schema = new mongoose_1.Schema({
     userId: {
         type: String,
         required: true
@@ -176,5 +167,4 @@ let schema = new Schema({
         required: false
     }
 });
-
-export const WebsiteOptimization: Model<IWebsiteOptimizationModel> = model<IWebsiteOptimizationModel>("WebsiteOptimization", schema);
+exports.WebsiteOptimization = mongoose_1.model("WebsiteOptimization", schema);
