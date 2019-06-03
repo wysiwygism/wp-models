@@ -1,14 +1,11 @@
-export interface IStatusHistory {
-    status: string;
-    date: Date;
-}
 export interface IWebsiteOptimizationTestStatus {
     testId: string;
     startDate?: Date;
     endDate?: Date;
     duration?: number;
     status: string;
-    statusHistory?: IStatusHistory[];
+    isSuccess: boolean;
+    isStopped: boolean;
 }
 export interface IWebsiteOptimizationImportStatus {
     importId: string;
@@ -16,26 +13,28 @@ export interface IWebsiteOptimizationImportStatus {
     endDate?: Date;
     duration?: number;
     status: string;
-    statusHistory?: IStatusHistory[];
+    isSuccess: boolean;
+    isStopped: boolean;
 }
 export interface IWebsiteAssetOptimizationStatus {
     startDate?: Date;
     endDate?: Date;
     duration?: number;
     status: string;
-    statusHistory?: IStatusHistory[];
+    isSuccess: boolean;
+    isStopped: boolean;
 }
 export interface IWebsiteCdnInvalidationStatus {
     startDate?: Date;
     endDate?: Date;
     duration?: number;
     status: string;
-    statusHistory?: IStatusHistory[];
+    isSuccess: boolean;
+    isStopped: boolean;
 }
 export interface IWebsiteOptimization {
     userId: string;
     websiteId: string;
-    originTestStatus: IWebsiteOptimizationTestStatus;
     importStatus: IWebsiteOptimizationImportStatus;
     assetOptimizationStatus: IWebsiteAssetOptimizationStatus;
     cdnInvalidationStatus: IWebsiteCdnInvalidationStatus;
@@ -43,5 +42,8 @@ export interface IWebsiteOptimization {
     startDate?: Date;
     endDate?: Date;
     duration?: number;
+    isRunning: boolean;
+    isSuccess: boolean;
+    isStopped: boolean;
     status: string;
 }

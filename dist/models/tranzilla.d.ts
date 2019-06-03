@@ -1,4 +1,3 @@
-/// <reference types="mongoose" />
 import { Document, Model } from "mongoose";
 import { ITranzilla } from "../interfaces/tranzilla";
 export interface ITranzillaModel extends ITranzilla, Document {

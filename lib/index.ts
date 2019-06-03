@@ -15,7 +15,6 @@ export {IWebsiteTestResults} from "./interfaces/website-test-results";
 export {IWebsiteActiveTask} from "./interfaces/website-active-task";
 export {IWebsiteScripts} from "./interfaces/website-scripts";
 export {
-    IStatusHistory,
     IWebsiteOptimizationTestStatus,
     IWebsiteOptimizationImportStatus,
     IWebsiteAssetOptimizationStatus,
