@@ -20,7 +20,7 @@ let websiteOptimizationTestStatusSchema = new mongoose_1.Schema({
     },
     status: {
         type: String,
-        required: true
+        required: false
     },
     isSuccess: {
         type: Boolean,
@@ -50,7 +50,7 @@ let websiteOptimizationImportStatusSchema = new mongoose_1.Schema({
     },
     status: {
         type: String,
-        required: true
+        required: false
     },
     isSuccess: {
         type: Boolean,
@@ -76,7 +76,7 @@ let websiteAssetOptimizationStatusSchema = new mongoose_1.Schema({
     },
     status: {
         type: String,
-        required: true
+        required: false
     },
     isSuccess: {
         type: Boolean,
@@ -102,7 +102,7 @@ let websiteCdnInvalidationStatusSchema = new mongoose_1.Schema({
     },
     status: {
         type: String,
-        required: true
+        required: false
     },
     isSuccess: {
         type: Boolean,

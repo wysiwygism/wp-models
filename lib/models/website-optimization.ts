@@ -25,7 +25,7 @@ let websiteOptimizationTestStatusSchema = new Schema({
     },
     status: {
         type: String,
-        required: true
+        required: false
     },
     isSuccess: {
         type: Boolean,
@@ -56,7 +56,7 @@ let websiteOptimizationImportStatusSchema = new Schema({
     },
     status: {
         type: String,
-        required: true
+        required: false
     },
     isSuccess: {
         type: Boolean,
@@ -83,7 +83,7 @@ let websiteAssetOptimizationStatusSchema = new Schema({
     },
     status: {
         type: String,
-        required: true
+        required: false
     },
     isSuccess: {
         type: Boolean,
@@ -110,7 +110,7 @@ let websiteCdnInvalidationStatusSchema = new Schema({
     },
     status: {
         type: String,
-        required: true
+        required: false
     },
     isSuccess: {
         type: Boolean,

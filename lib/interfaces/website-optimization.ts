@@ -3,7 +3,7 @@ export interface IWebsiteOptimizationTestStatus {
     startDate?: Date;
     endDate?: Date;
     duration?: number;
-    status: string;
+    status?: string;
     isSuccess: boolean;
     isStopped: boolean;
 }
@@ -13,7 +13,7 @@ export interface IWebsiteOptimizationImportStatus {
     startDate?: Date;
     endDate?: Date;
     duration?: number;
-    status: string;
+    status?: string;
     isSuccess: boolean;
     isStopped: boolean;
 }
@@ -22,7 +22,7 @@ export interface IWebsiteAssetOptimizationStatus {
     startDate?: Date;
     endDate?: Date;
     duration?: number;
-    status: string;
+    status?: string;
     isSuccess: boolean;
     isStopped: boolean;
 }
@@ -31,7 +31,7 @@ export interface IWebsiteCdnInvalidationStatus {
     startDate?: Date;
     endDate?: Date;
     duration?: number;
-    status: string;
+    status?: string;
     isSuccess: boolean;
     isStopped: boolean;
 }
@@ -49,5 +49,5 @@ export interface IWebsiteOptimization {
     isRunning: boolean;
     isSuccess: boolean;
     isStopped: boolean;
-    status: string;
+    status?: string;
 }
