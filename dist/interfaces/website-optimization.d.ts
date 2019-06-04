@@ -1,3 +1,12 @@
+export interface IWebsiteOptimizationTestStatusResults {
+    cdn?: number;
+    cache?: number;
+    compress?: number;
+    gzip?: number;
+    keepalive?: number;
+    progressiveJpeg?: number;
+    avg?: number;
+}
 export interface IWebsiteOptimizationTestStatus {
     testId?: string;
     startDate?: Date;
@@ -6,6 +15,7 @@ export interface IWebsiteOptimizationTestStatus {
     status?: string;
     isSuccess: boolean;
     isStopped: boolean;
+    results?: IWebsiteOptimizationTestStatusResults;
 }
 export interface IWebsiteOptimizationImportStatus {
     importId?: string;

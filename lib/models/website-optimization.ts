@@ -6,6 +6,37 @@ export interface IWebsiteOptimizationModel extends IWebsiteOptimization, Documen
 
 }
 
+let websiteOptimizationTestStatusResultsSchema = new Schema({
+    cdn: {
+        type: Number,
+        required: false
+    },
+    cache: {
+        type: Number,
+        required: false
+    },
+    compress: {
+        type: Number,
+        required: false
+    },
+    gzip: {
+        type: Number,
+        required: false
+    },
+    keepalive: {
+        type: Number,
+        required: false
+    },
+    progressiveJpeg: {
+        type: Number,
+        required: false
+    },
+    avg: {
+        type: Number,
+        required: false
+    }
+}, {_id: false});
+
 let websiteOptimizationTestStatusSchema = new Schema({
     testId: {
         type: String,
@@ -34,6 +65,10 @@ let websiteOptimizationTestStatusSchema = new Schema({
     isStopped: {
         type: Boolean,
         required: true
+    },
+    results: {
+        type: websiteOptimizationTestStatusResultsSchema,
+        required: false
     }
 }, {_id: false});
 

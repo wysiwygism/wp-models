@@ -1,6 +1,36 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const mongoose_1 = require("mongoose");
+let websiteOptimizationTestStatusResultsSchema = new mongoose_1.Schema({
+    cdn: {
+        type: Number,
+        required: false
+    },
+    cache: {
+        type: Number,
+        required: false
+    },
+    compress: {
+        type: Number,
+        required: false
+    },
+    gzip: {
+        type: Number,
+        required: false
+    },
+    keepalive: {
+        type: Number,
+        required: false
+    },
+    progressiveJpeg: {
+        type: Number,
+        required: false
+    },
+    avg: {
+        type: Number,
+        required: false
+    }
+}, { _id: false });
 let websiteOptimizationTestStatusSchema = new mongoose_1.Schema({
     testId: {
         type: String,
@@ -29,6 +59,10 @@ let websiteOptimizationTestStatusSchema = new mongoose_1.Schema({
     isStopped: {
         type: Boolean,
         required: true
+    },
+    results: {
+        type: websiteOptimizationTestStatusResultsSchema,
+        required: false
     }
 }, { _id: false });
 let websiteOptimizationImportStatusSchema = new mongoose_1.Schema({
