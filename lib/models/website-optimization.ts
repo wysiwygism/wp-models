@@ -96,6 +96,10 @@ let websiteAssetOptimizationStatusSchema = new Schema({
 }, {_id: false});
 
 let websiteCdnInvalidationStatusSchema = new Schema({
+    invalidationId: {
+        type: String,
+        required: true
+    },
     startDate: {
         type: Date,
         required: false

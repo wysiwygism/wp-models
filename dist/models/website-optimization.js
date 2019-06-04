@@ -88,6 +88,10 @@ let websiteAssetOptimizationStatusSchema = new mongoose_1.Schema({
     }
 }, { _id: false });
 let websiteCdnInvalidationStatusSchema = new mongoose_1.Schema({
+    invalidationId: {
+        type: String,
+        required: true
+    },
     startDate: {
         type: Date,
         required: false

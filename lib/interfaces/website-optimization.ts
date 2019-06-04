@@ -28,6 +28,7 @@ export interface IWebsiteAssetOptimizationStatus {
 }
 
 export interface IWebsiteCdnInvalidationStatus {
+    invalidationId: string;
     startDate?: Date;
     endDate?: Date;
     duration?: number;
