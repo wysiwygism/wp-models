@@ -7,7 +7,6 @@ export interface IWebsiteOptimizationTestStatus {
     isSuccess: boolean;
     isStopped: boolean;
 }
-
 export interface IWebsiteOptimizationImportStatus {
     importId: string;
     startDate?: Date;
@@ -17,7 +16,6 @@ export interface IWebsiteOptimizationImportStatus {
     isSuccess: boolean;
     isStopped: boolean;
 }
-
 export interface IWebsiteAssetOptimizationStatus {
     startDate?: Date;
     endDate?: Date;
@@ -26,7 +24,6 @@ export interface IWebsiteAssetOptimizationStatus {
     isSuccess: boolean;
     isStopped: boolean;
 }
-
 export interface IWebsiteCdnInvalidationStatus {
     startDate?: Date;
     endDate?: Date;
@@ -35,7 +32,6 @@ export interface IWebsiteCdnInvalidationStatus {
     isSuccess: boolean;
     isStopped: boolean;
 }
-
 export interface IWebsiteOptimization {
     userId: string;
     websiteId: string;
