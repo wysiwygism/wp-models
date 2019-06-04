@@ -25,6 +25,7 @@ export interface IWebsiteAssetOptimizationStatus {
     isStopped: boolean;
 }
 export interface IWebsiteCdnInvalidationStatus {
+    invalidationId: string;
     startDate?: Date;
     endDate?: Date;
     duration?: number;
