@@ -9,7 +9,7 @@ export interface IWebsiteOptimizationModel extends IWebsiteOptimization, Documen
 let websiteOptimizationTestStatusSchema = new Schema({
     testId: {
         type: String,
-        required: true
+        required: false
     },
     startDate: {
         type: Date,
@@ -40,7 +40,7 @@ let websiteOptimizationTestStatusSchema = new Schema({
 let websiteOptimizationImportStatusSchema = new Schema({
     importId: {
         type: String,
-        required: true
+        required: false
     },
     startDate: {
         type: Date,
@@ -98,7 +98,7 @@ let websiteAssetOptimizationStatusSchema = new Schema({
 let websiteCdnInvalidationStatusSchema = new Schema({
     invalidationId: {
         type: String,
-        required: true
+        required: false
     },
     startDate: {
         type: Date,

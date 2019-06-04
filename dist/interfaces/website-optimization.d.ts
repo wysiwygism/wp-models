@@ -1,5 +1,5 @@
 export interface IWebsiteOptimizationTestStatus {
-    testId: string;
+    testId?: string;
     startDate?: Date;
     endDate?: Date;
     duration?: number;
@@ -8,7 +8,7 @@ export interface IWebsiteOptimizationTestStatus {
     isStopped: boolean;
 }
 export interface IWebsiteOptimizationImportStatus {
-    importId: string;
+    importId?: string;
     startDate?: Date;
     endDate?: Date;
     duration?: number;
@@ -25,7 +25,7 @@ export interface IWebsiteAssetOptimizationStatus {
     isStopped: boolean;
 }
 export interface IWebsiteCdnInvalidationStatus {
-    invalidationId: string;
+    invalidationId?: string;
     startDate?: Date;
     endDate?: Date;
     duration?: number;

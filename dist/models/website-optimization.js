@@ -4,7 +4,7 @@ const mongoose_1 = require("mongoose");
 let websiteOptimizationTestStatusSchema = new mongoose_1.Schema({
     testId: {
         type: String,
-        required: true
+        required: false
     },
     startDate: {
         type: Date,
@@ -34,7 +34,7 @@ let websiteOptimizationTestStatusSchema = new mongoose_1.Schema({
 let websiteOptimizationImportStatusSchema = new mongoose_1.Schema({
     importId: {
         type: String,
-        required: true
+        required: false
     },
     startDate: {
         type: Date,
@@ -90,7 +90,7 @@ let websiteAssetOptimizationStatusSchema = new mongoose_1.Schema({
 let websiteCdnInvalidationStatusSchema = new mongoose_1.Schema({
     invalidationId: {
         type: String,
-        required: true
+        required: false
     },
     startDate: {
         type: Date,
