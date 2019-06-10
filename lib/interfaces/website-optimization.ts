@@ -1,4 +1,5 @@
 export interface IWebsiteOptimizationTestStatusResults {
+    loadTime?: number;
     cdn?: number;
     cache?: number;
     compress?: number;

@@ -7,6 +7,10 @@ export interface IWebsiteOptimizationModel extends IWebsiteOptimization, Documen
 }
 
 let websiteOptimizationTestStatusResultsSchema = new Schema({
+    loadTime: {
+        type: Number,
+        required: false
+    },
     cdn: {
         type: Number,
         required: false

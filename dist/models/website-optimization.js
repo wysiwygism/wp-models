@@ -2,6 +2,10 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const mongoose_1 = require("mongoose");
 let websiteOptimizationTestStatusResultsSchema = new mongoose_1.Schema({
+    loadTime: {
+        type: Number,
+        required: false
+    },
     cdn: {
         type: Number,
         required: false
