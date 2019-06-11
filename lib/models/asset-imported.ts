@@ -101,6 +101,10 @@ let schema = new Schema({
         type: String,
         required: false
     },
+    inlineJs: {
+        type: String,
+        required: false
+    },
     md5Url: {
         type: String,
         required: false
