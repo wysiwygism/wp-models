@@ -14,7 +14,7 @@ export interface IAsset {
     optimizationLevel?: number;
     data?: string;
     optimizedData?: string;
-    inlineJs?: string;
+    inlineJs?: string[];
     md5Url?: string;
     crawlId?: string;
     include?: IAssetInclude;

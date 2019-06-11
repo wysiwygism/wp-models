@@ -102,7 +102,7 @@ let schema = new Schema({
         required: false
     },
     inlineJs: {
-        type: String,
+        type: [String],
         required: false
     },
     md5Url: {
