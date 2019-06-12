@@ -4,6 +4,7 @@ export interface IAssetImported {
     websiteId: string;
     cloneId: string;
     url: string;
+    altUrl?: string;
     mimetype: string;
     encoding?: string;
     parseError?: boolean;
@@ -14,7 +15,9 @@ export interface IAssetImported {
     optimizationLevel?: number;
     data?: string;
     optimizedData?: string;
+    altOptimizedData?: string;
     inlineJs?: string[];
+    altInlineJs?: string[];
     md5Url?: string;
     crawlId?: string;
     include?: IAssetInclude;

@@ -51,6 +51,10 @@ let schema = new Schema({
         type: String,
         required: true
     },
+    altUrl: {
+        type: String,
+        required: false
+    },
     encoding: {
         type: String,
         required: false
@@ -101,7 +105,15 @@ let schema = new Schema({
         type: String,
         required: false
     },
+    altOptimizedData: {
+        type: String,
+        required: false
+    },
     inlineJs: {
+        type: [String],
+        required: false
+    },
+    altInlineJs: {
         type: [String],
         required: false
     },
